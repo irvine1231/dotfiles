@@ -1,4 +1,4 @@
-# Ernest Chiang's dotfiles
+# Irvine Chang's dotfiles
 
 **Before doing anything, make sure you know what are you doing!**
 
@@ -10,9 +10,9 @@ Settings applied by this repository are very personal and definitely not for eve
 
 ## How to Use?
 
-If you are **NOT** Ernest Chiang, please fork it before doing anything, then modify it, then use it.
+If you are **NOT** Irvine Chang, please fork it before doing anything, then modify it, then use it.
 
-If you are Ernest Chiang, please follow it step by step.
+If you are Irvine Chang, please follow it step by step.
 
 ----
 
@@ -37,7 +37,7 @@ xcode-select --install
 It may require enter user password couple times in this step.
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dwchiang/dotfiles/master/scripts/setup-brew.sh)" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/irvine1231/dotfiles/master/scripts/setup-brew.sh)"
 ```
 
 - Now, we can run **iTerm2**.
@@ -53,7 +53,7 @@ Setup SSH and place personal keys at a right place for git clone on next step.
 Clone it for future easier maintainance.
 
 ```
-git clone git@github.com:dwchiang/dotfiles.git ~/.dotfiles
+git clone git@github.com:irvine1231/dotfiles.git ~/.dotfiles
 ```
 
 4. Init & Setup macOS:
@@ -91,19 +91,6 @@ source ~/.dotfiles/scripts/setup-symlinks.sh
 ### Visual Studio Code
 
 - [Turning on Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync)
-
-### Alfrad
-
-- `Advanced` > `Set preferences folder...` (path = //(storage)/Sync/Alfrad)
-
-### iTerm 2
-
-- Set `Preferences` > `General` > `Preferences` > `Load preferences from a custom folder or URL`.
-
-### GPG Keychain
-
-- Before using git commit.
-- Run **GPG Keychain** and import key(s) into GPG Keychain.
 
 ### Multiple Python Versions
 
@@ -183,6 +170,7 @@ java -version
 
 ### (My Notes)
 
+TODO: Modify to Google Drive notes
 - `ln -is /Users/___userNameHere___/Dropbox/Apps/Byword/notes ~/notes`
 
 ----
@@ -213,7 +201,7 @@ mackup restore
 - Mathias’s dotfiles (https://github.com/mathiasbynens/dotfiles)
 - [holman does dotfiles](https://github.com/holman/dotfiles)
 - [Paul Irish](https://www.paulirish.com/)'s dotfiles (https://github.com/paulirish/dotfiles)
-- (中文) Amo Wu's dotfiles (https://github.com/amowu/dotfiles) 
+- (中文) Amo Wu's dotfiles (https://github.com/amowu/dotfiles)
 - [zero.sh](https://github.com/zero-sh/zero.sh): Radically simple personal bootstrapping tool for macOS.
   - [apply-user-defaults](https://github.com/zero-sh/apply-user-defaults) is a small utility to set macOS user defaults declaratively from a YAML file.
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle)

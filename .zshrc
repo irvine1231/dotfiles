@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dwchiang/.oh-my-zsh"
+export ZSH=/Users/pafers_irvine/.oh-my-zsh
 export HOMEBREW_NO_ANALYTICS=1
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -78,41 +78,25 @@ export PATH="${PATH}:${HOME}/.composer/vendor/bin"
 # Android
 export PATH="${PATH}:${HOME}/Library/Android/sdk/tools"
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
-export NDK="${HOME}/Development/ndk/android-ndk-r19c"
 
 # Android NDK
+export NDK="${HOME}/Development/ndk/android-ndk-r19c"
 export PATH="${PATH}:${HOME}/Development/ndk/android-ndk-r19c"
 
 # Dart (pub)
 export PATH="${PATH}:${HOME}/.pub-cache/bin"
 
 # Flutter
-export PATH="${PATH}:${HOME}/Development/flutter/flutter_v1.12.13+hotfix.5-stable/bin"
 export PATH="${PATH}:${HOME}/Library/flutter/bin"
-
-# GCC
-export PATH="${PATH}:${HOME}/Development/gcc/gcc-arm-none-eabi-7-2018-q2-update/bin"
 
 # Go
 export PATH="${PATH}:/usr/local/opt/go/libexec/bin"
 
-# Nordic nRF CLI
-export PATH="${PATH}:${HOME}/Development/nRF_CLI/nRF-Command-Line-Tools_9_8_1_OSX/nrfjprog"
+# google cloud sdk
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
 # Python
 export PATH="${PATH}:$(pyenv root)/shims"
-
-# Ruby
-export PATH="${PATH}:/usr/local/opt/ruby/bin"
-
-# Rust
-export PATH="${PATH}:${HOME}/.cargo/bin"
-
-# Visual Studio Code (code)
-export PATH="${PATH}:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# yarn
-export PATH="${PATH}:${HOME}/.yarn/bin:${HOME}/.config/yarn/global/node_modules/.bin"
 
 ####################################################################
 # Aliases
@@ -136,7 +120,7 @@ export EDITOR='vim'
 # fi
 
 ####################################################################
-# nvm 
+# nvm
 ####################################################################
 # Install zsh-async if it’s not present
 if [[ ! -a ~/.zsh-async ]]; then
@@ -163,8 +147,6 @@ export PATH="${PATH}:${HOME}/.jenv/bin"
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # ensure that JAVA_HOME is correct
 jenv enable-plugin export > /dev/null
-# make Maven aware of the Java version in use (and switch when your project does)
-jenv enable-plugin maven > /dev/null
 
 ####################################################################
 # pyenv
@@ -191,21 +173,10 @@ autoload -Uz compinit && compinit -i
 export GPG_TTY=$(tty)
 
 ####################################################################
-# functions
-####################################################################
-function curltime {
-    # curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
-    curl -w "@script/tools/curl-format.txt" -so /dev/null "$1"
-}
-
-####################################################################
-# Ernest's Headsup
+# Irvine's Headsup
 ####################################################################
 echo "============================================================="
 echo "AWS"
 echo "  > export AWS_DEFAULT_PROFILE=xxx"
 echo "  > export AWS_PAGER=\"\" (for AWS CLI v2)"
-echo
-echo "Rust"
-echo "  > rustup docs --book"
 echo "============================================================="
