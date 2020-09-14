@@ -173,12 +173,15 @@ brew cask install imageoptim
 brew cask install intel-haxm
 brew cask install istat-menus
 # brew cask install iterm2
-brew cask install java
+# brew cask install java
 # brew cask install java6
 # brew cask install java7
+# JAVA 8, 9, 10 is not available to download through public site.
 # brew cask install java8
 # brew cask install java9
 # brew cask install java10
+# To install JDK8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 brew cask install joplin
 brew cask install keepassx
 brew cask install keka
