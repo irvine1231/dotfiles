@@ -182,7 +182,8 @@ brew cask install istat-menus
 # brew cask install java10
 # To install JDK8
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-brew cask install joplin
+# brew cask install joplin
+brew cask install obsidian
 brew cask install keepassx
 brew cask install keka
 # brew cask install keybase

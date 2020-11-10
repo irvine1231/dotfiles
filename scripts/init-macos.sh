@@ -24,6 +24,17 @@ install_ohmyzsh () {
   fi
 }
 
+# Function: install_powerlevel10k()
+#
+install_powerlevel10k () {
+  if [ -d ~/.oh-my-zsh ]
+  then
+    info '  Installing powerlevel10k'
+    sh -c "$(brew install romkatv/powerlevel10k/powerlevel10k)"
+    success '  Installed powerlevel10k'
+  fi
+}
+
 # Function: init nvm
 #
 init_nvm () {
@@ -35,9 +46,10 @@ init_nvm () {
   fi
 }
 
-# Main 
+# Main
 #
 install_ohmyzsh
+install_powerlevel10k
 init_nvm
 
 echo ''

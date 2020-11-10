@@ -8,7 +8,12 @@ export HOMEBREW_NO_ANALYTICS=1
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Theme Configuration
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -98,6 +103,9 @@ source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.z
 # Python
 export PATH="${PATH}:$(pyenv root)/shims"
 
+# Mysql
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
 ####################################################################
 # Aliases
 ####################################################################
@@ -124,7 +132,7 @@ export EDITOR='vim'
 ####################################################################
 # Install zsh-async if it’s not present
 if [[ ! -a ~/.zsh-async ]]; then
-  git clone git@me.github.com:mafredri/zsh-async.git ~/.zsh-async
+  git clone https://github.com/mafredri/zsh-async.git ~/.zsh-async
 fi
 source ~/.zsh-async/async.zsh
 
