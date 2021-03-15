@@ -100,6 +100,7 @@ brew install ninja
 brew install nvm
 brew install opencv@2
 # brew install packer
+brew install pandoc
 # brew install paritytech/paritytech/parity
 # brew install php
 # brew install php@7.2
@@ -111,6 +112,7 @@ brew install pstree
 brew install pyenv
 # brew install python@2
 # brew install redis
+brew install scrcpy
 brew install siege
 brew install socat
 brew install speedtest-cli
@@ -144,6 +146,7 @@ brew install --cask angry-ip-scanner
 # brew install --cask boinc
 # brew install --cask brackets
 # brew install --cask calibre
+brew install --cask charles
 # brew install --cask clipy
 brew install --cask coolterm
 brew install --cask cyberduck
