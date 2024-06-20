@@ -1,2 +1,18 @@
 # Place aliases in this file, for example:
 #   alias cat='bat'
+
+alias asp="cd /Users/pafers_irvine/AndroidStudioProjects"
+alias project="cd /Users/pafers_irvine/projects"
+alias drive="cd ~/Google\ Drive/My\ Drive/"
+alias laradock="cd /Users/pafers_irvine/projects/laradock"
+alias napa="cd /var/www/napa"
+alias workspace="laradock && dc exec --user laradock workspace zsh"
+
+alias dc="docker-compose"
+alias devup="laradock && dc up -d nginx mysql mysql-slave redis redis-slave php-worker postgres"
+alias devdown="laradock && dc down"
+alias devstart="laradock && dc start"
+alias devstop="laradock && dc stop"
+
+alias tunnelstop="sudo launchctl stop com.cloudflare.cloudflared"
+alias tunnelstart="sudo launchctl start com.cloudflare.cloudflared"

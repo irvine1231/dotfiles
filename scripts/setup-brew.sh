@@ -43,7 +43,8 @@ brew install bash-completion
 # brew install boost-build
 brew install brew-cask-completion
 # brew install vitorgalvao/tiny-scripts/cask-repair
-brew install certbot
+# brew install certbot
+brew install cloudflared
 brew install cmake
 # brew install cocoapods
 brew install colordiff
@@ -55,6 +56,7 @@ brew install dnsmap
 # brew install ethereum
 brew install exiftool
 brew install geoip
+brew install gifski
 brew install git
 # brew install gnu-sed
 brew install gnupg
@@ -130,51 +132,57 @@ brew install wget
 brew install wrk
 # brew install hsatac/toybox/wifi-password-qr
 # brew install wireshark
-brew install youtube-dl
+# brew install youtube-dl
 brew install zsh-completions
 
 # brew install --cask
 #
-# brew install --cask alfred
+brew install --cask alfred
+brew install --cask altair-graphql-client
 brew install --cask amazon-chime
 brew install --cask android-platform-tools
 brew install --cask android-studio
 brew install --cask androidtool
 brew install --cask angry-ip-scanner
+brew install --cask arc
 # brew install --cask bartender
 # brew install --cask blue-jeans
 # brew install --cask boinc
 # brew install --cask brackets
 # brew install --cask calibre
-brew install --cask charles
+# brew install --cask charles
 # brew install --cask clipy
 brew install --cask coolterm
-brew install --cask cyberduck
+# brew install --cask cyberduck
 brew install --cask db-browser-for-sqlite
+brew install --cask devtoys
 # brew install --cask discord
-brew install --cask docker
+# brew install --cask docker
 brew install --cask drawio
 # brew install --cask dropbox
 # brew install --cask dynobase
 # brew install --cask electrum
+# brew install --cask ferdi-beta
 brew install --cask firefox
 brew install --cask font-source-code-pro
 # brew install --cask fork
 # brew install --cask gitter
-brew install --cask google-backup-and-sync
-brew install --cask google-chrome
-brew install --cask google-chrome-canary
+# brew install --cask google-backup-and-sync
+# brew install --cask google-chrome-beta
+# brew install --cask google-chrome-canary
 brew install --cask google-cloud-sdk
+brew install --cask google-drive
 # brew install --cask google-drive-file-stream
 # brew install --cask google-hangouts
 # brew install --cask gpg-suite
-brew install --cask grandperspective
+# brew install --cask grandperspective
+brew install --cask hammerspoon
 # brew install --cask handbrake
 brew install --cask hyper
 # brew install --cask ifunbox
 brew install --cask imageoptim
-brew install --cask intel-haxm
-brew install --cask istat-menus
+# brew install --cask intel-haxm
+# brew install --cask istat-menus
 # brew install --cask iterm2
 # brew install --cask java
 # brew install --cask java6
@@ -193,32 +201,37 @@ brew install --cask keka
 # brew install --cask keystore-explorer
 # brew install --cask limechat
 # brew install --cask macdown
-# brew install --cask macs-fan-control
+brew install --cask macs-fan-control
+brew install --cask mactex
 # brew install --cask mactracker
-# brew install --cask microsoft-teams
+brew install --cask medis
+brew install --cask microsoft-teams
 # brew install --cask minikube
 # brew install --cask moom
 # brew install --cask mysqlworkbench
 # brew install --cask nally
 brew install --cask ngrok
-brew install --cask nosql-workbench-for-amazon-dynamodb
+# brew install --cask nosql-workbench-for-amazon-dynamodb
 brew install --cask obs
 # brew install --cask omnidisksweeper
 # brew install --cask omnifocus
 # brew install --cask omnigraffle
 # brew install --cask openvisualtraceroute
+brew install --cask orbstack
 # brew install --cask phoenix-slides
 brew install --cask postman
+brew install --cask postman-agent
 # brew install --cask proxyman
 # brew install --cask rescuetime
 brew install --cask sequel-ace
 # brew install --cask sequel-pro
-brew install --cask sizeup
+# brew install --cask sizeup
 # brew install --cask sketch
 # brew install --cask skype
 # brew install --cask slack
 # brew install --cask sourcetree
 # brew install --cask spotify
+brew install --cask table-tool
 # brew install --cask teamviewer
 # brew install --cask telegram
 # brew install --cask thumbsup
@@ -227,11 +240,13 @@ brew install --cask sizeup
 # brew install --cask vagrant
 # brew install --cask vagrant-manager
 brew install --cask virtualbox
-brew install --cask visual-studio-code
+# brew install --cask visual-studio-code
+brew install --cask visual-studio-code@insiders
 brew install --cask vlc
 # brew install --cask vmware-fusion
 # brew install --cask whatsapp
 brew install --cask whatsize
+brew install --cask webcatalog
 # brew install --cask wireshark
 # brew install --cask wwdc
 # brew install --cask x-mirage
